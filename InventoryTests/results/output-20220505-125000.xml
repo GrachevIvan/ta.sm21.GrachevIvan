@@ -1,0 +1,2665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20220505 12:50:00.250" generator="Robot 3.0 (Python 2.7.11 on win32)">
+<suite source="E:\Документы\Курсы\Test Automation\Итоговая лабораторная работа (inventory)\InventoryTests" id="s1" name="InventoryTests">
+<suite source="E:\Документы\Курсы\Test Automation\Итоговая лабораторная работа (inventory)\InventoryTests\Autorization.robot" id="s1-s1" name="Autorization">
+<kw type="setup" name="Go to Authorization Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/login.jsp</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220505 12:50:00.474" level="INFO">Opening browser 'chrome' to base url 'https://inventory.edu-netcracker.com/login.jsp'</msg>
+<status status="PASS" endtime="20220505 12:50:03.773" starttime="20220505 12:50:00.474"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:03.774" starttime="20220505 12:50:00.473"></status>
+</kw>
+<test id="s1-s1-t1" name="Successful login to the account">
+<kw name="Input Username">
+<arguments>
+<arg>Userr2</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:03.778" level="INFO">Typing text 'Userr2' into text field '//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:03.932" starttime="20220505 12:50:03.777"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:03.932" starttime="20220505 12:50:03.776"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>Password2+</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:03.932" level="INFO">Typing text 'Password2+' into text field '//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:04.057" starttime="20220505 12:50:03.932"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:04.058" starttime="20220505 12:50:03.932"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.059" level="INFO">Clicking button '//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:04.261" starttime="20220505 12:50:04.059"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:04.262" starttime="20220505 12:50:04.058"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Log out</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.281" level="INFO">Current page contains text 'Log out'.</msg>
+<status status="PASS" endtime="20220505 12:50:04.281" starttime="20220505 12:50:04.263"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:04.445" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:04.445" starttime="20220505 12:50:04.281"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[4]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.445" level="INFO">Clicking link '//*[@id="navigation_toolbar"]/table/tbody/tr/td[4]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:04.587" starttime="20220505 12:50:04.445"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:04.588" critical="yes" starttime="20220505 12:50:03.775"></status>
+</test>
+<test id="s1-s1-t2" name="Invalid username or password">
+<kw name="Input Username">
+<arguments>
+<arg>Userr2</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.592" level="INFO">Typing text 'Userr2' into text field '//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:04.662" starttime="20220505 12:50:04.591"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:04.663" starttime="20220505 12:50:04.590"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>Paaaasss3#</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.664" level="INFO">Typing text 'Paaaasss3#' into text field '//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:04.763" starttime="20220505 12:50:04.664"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:04.764" starttime="20220505 12:50:04.663"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.766" level="INFO">Clicking button '//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:04.892" starttime="20220505 12:50:04.765"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:04.893" starttime="20220505 12:50:04.764"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="content"]/div</arg>
+<arg>Your login attempt was not successful, try again.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:04.897" level="INFO">Verifying element '//*[@id="content"]/div' contains text 'Your login attempt was not successful, try again.'.</msg>
+<status status="PASS" endtime="20220505 12:50:04.933" starttime="20220505 12:50:04.894"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<arguments>
+<arg>IUP.png</arg>
+</arguments>
+<msg timestamp="20220505 12:50:05.062" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="IUP.png"&gt;&lt;img src="IUP.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:05.062" starttime="20220505 12:50:04.933"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:05.062" critical="yes" starttime="20220505 12:50:04.589"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220505 12:50:06.250" starttime="20220505 12:50:05.062"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:06.250" starttime="20220505 12:50:00.323"></status>
+</suite>
+<suite source="E:\Документы\Курсы\Test Automation\Итоговая лабораторная работа (inventory)\InventoryTests\Inventory_(list_of_objects)_page.robot" id="s1-s2" name="Inventory (list of objects) page">
+<kw type="setup" name="Go to Inventory Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/login.jsp</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220505 12:50:06.266" level="INFO">Opening browser 'chrome' to base url 'https://inventory.edu-netcracker.com/login.jsp'</msg>
+<status status="PASS" endtime="20220505 12:50:08.578" starttime="20220505 12:50:06.266"></status>
+</kw>
+<kw name="Input Username">
+<arguments>
+<arg>${login}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:08.582" level="INFO">Typing text 'ivan_grachev' into text field '//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:08.713" starttime="20220505 12:50:08.580"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:08.713" starttime="20220505 12:50:08.578"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>${password}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:08.713" level="INFO">Typing text '8vx-gpx-eee-eFi' into text field '//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:08.883" starttime="20220505 12:50:08.713"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:08.883" starttime="20220505 12:50:08.713"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:08.883" level="INFO">Clicking button '//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:09.099" starttime="20220505 12:50:08.883"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:09.100" starttime="20220505 12:50:08.883"></status>
+</kw>
+<kw name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2</arg>
+</arguments>
+<msg timestamp="20220505 12:50:09.101" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2'</msg>
+<status status="PASS" endtime="20220505 12:50:09.445" starttime="20220505 12:50:09.100"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:09.694" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:09.694" starttime="20220505 12:50:09.445"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:09.694" starttime="20220505 12:50:06.266"></status>
+</kw>
+<test id="s1-s2-t1" name="Creating a descendant object">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2</arg>
+</arguments>
+<msg timestamp="20220505 12:50:09.694" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2'</msg>
+<status status="PASS" endtime="20220505 12:50:09.965" starttime="20220505 12:50:09.694"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:09.965" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td[1]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:10.131" starttime="20220505 12:50:09.965"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/country/create.xhtml?parent_id=2</arg>
+</arguments>
+<msg timestamp="20220505 12:50:10.139" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/country/create.xhtml?parent_id=2'.</msg>
+<status status="PASS" endtime="20220505 12:50:10.140" starttime="20220505 12:50:10.132"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:10.364" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:10.364" starttime="20220505 12:50:10.141"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:10.364" critical="yes" starttime="20220505 12:50:09.694"></status>
+</test>
+<test id="s1-s2-t2" name="Structured view (does not work)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2</arg>
+</arguments>
+<msg timestamp="20220505 12:50:10.380" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2'</msg>
+<status status="PASS" endtime="20220505 12:50:10.630" starttime="20220505 12:50:10.380"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="j_idt76:tabView:j_idt89_data"]/tr[1]/td[1]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:10.630" level="INFO">Clicking link '//*[@id="j_idt76:tabView:j_idt89_data"]/tr[1]/td[1]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:10.839" starttime="20220505 12:50:10.630"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="j_idt76:tabView"]/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:10.840" level="INFO">Clicking link '//*[@id="j_idt76:tabView"]/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:10.916" starttime="20220505 12:50:10.839"></status>
+</kw>
+<kw name="Table Cell Should Contain" library="Selenium2Library">
+<doc>Verifies that a certain cell in a table contains `expected`.</doc>
+<arguments>
+<arg>//*[@id="table_data"]/table</arg>
+<arg>2</arg>
+<arg>1</arg>
+<arg>Country</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:11.099" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:11.100" starttime="20220505 12:50:10.965"></status>
+</kw>
+<msg timestamp="20220505 12:50:11.104" level="FAIL">InvalidSelectorException: Message: u'invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome=101.0.4951.54)\n  (Driver info: chromedriver=101.0.4951.15 (0dcf182bd3881ac6567fb51e86a17ba341d19475-refs/branch-heads/4951@{#217}),platform=Windows NT 10.0.19044 x86_64)' </msg>
+<status status="FAIL" endtime="20220505 12:50:11.105" starttime="20220505 12:50:10.917"></status>
+</kw>
+<status status="FAIL" endtime="20220505 12:50:11.105" critical="yes" starttime="20220505 12:50:10.364">InvalidSelectorException: Message: u'invalid selector: An invalid or illegal selector was specified\n  (Session info: chrome=101.0.4951.54)\n  (Driver info: chromedriver=101.0.4951.15 (0dcf182bd3881ac6567fb51e86a17ba341d19475-refs/branch-heads/4951@{#217}),platform=Windows NT 10.0.19044 x86_64)' </status>
+</test>
+<test id="s1-s2-t3" name="&quot;Country&quot; object (1)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/country/main.xhtml?id=10387&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.108" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/country/main.xhtml?id=10387&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:11.260" starttime="20220505 12:50:11.108"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.261" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:11.405" starttime="20220505 12:50:11.261"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:11.405" starttime="20220505 12:50:11.260"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e1_name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.407" level="INFO">Typing text 'England' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:11.522" starttime="20220505 12:50:11.406"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:11.522" starttime="20220505 12:50:11.406"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:continent"]</arg>
+<arg>${e1_continent}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.523" level="INFO">Selecting label(s) 'Eurasia' from list '//*[@id="j_idt74:continent"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:11.565" starttime="20220505 12:50:11.523"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:language"]</arg>
+<arg>${e1_language}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.565" level="INFO">Typing text 'English' into text field '//*[@id="j_idt74:language"]'</msg>
+<status status="PASS" endtime="20220505 12:50:11.661" starttime="20220505 12:50:11.565"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.661" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:11.889" starttime="20220505 12:50:11.661"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:11.889" starttime="20220505 12:50:11.661"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/country/main.xhtml?id=10387&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:11.894" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/country/main.xhtml?id=10387&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:11.894" starttime="20220505 12:50:11.890"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:12.033" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:12.033" starttime="20220505 12:50:11.894"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:12.034" critical="yes" starttime="20220505 12:50:11.107"></status>
+</test>
+<test id="s1-s2-t4" name="&quot;City&quot; object (2)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/city/main.xhtml?id=10388&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.037" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/city/main.xhtml?id=10388&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:12.152" starttime="20220505 12:50:12.037"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.155" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:12.285" starttime="20220505 12:50:12.154"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:12.285" starttime="20220505 12:50:12.153"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e2_name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.287" level="INFO">Typing text 'London' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:12.385" starttime="20220505 12:50:12.286"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:12.385" starttime="20220505 12:50:12.286"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:population"]</arg>
+<arg>${e2_population}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.386" level="INFO">Typing text '8908081' into text field '//*[@id="j_idt74:population"]'</msg>
+<status status="PASS" endtime="20220505 12:50:12.476" starttime="20220505 12:50:12.386"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:isRegionalCenter"]</arg>
+<arg>${e2_IRC}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.478" level="INFO">Selecting label(s) 'Yes' from list '//*[@id="j_idt74:isRegionalCenter"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:12.515" starttime="20220505 12:50:12.477"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.515" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:12.725" starttime="20220505 12:50:12.515"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:12.725" starttime="20220505 12:50:12.515"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/city/main.xhtml?id=10388&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.730" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/city/main.xhtml?id=10388&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:12.731" starttime="20220505 12:50:12.726"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:12.846" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:12.846" starttime="20220505 12:50:12.732"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:12.846" critical="yes" starttime="20220505 12:50:12.035"></status>
+</test>
+<test id="s1-s2-t5" name="&quot;Building&quot; object (3)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/building/main.xhtml?id=10389&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.846" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/building/main.xhtml?id=10389&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:12.981" starttime="20220505 12:50:12.846"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:12.984" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:13.124" starttime="20220505 12:50:12.984"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:13.125" starttime="20220505 12:50:12.983"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e3_name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.127" level="INFO">Typing text 'Building №1' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:13.226" starttime="20220505 12:50:13.126"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:13.226" starttime="20220505 12:50:13.125"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:streetName"]</arg>
+<arg>${e3_SName}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.227" level="INFO">Typing text 'Savrasova' into text field '//*[@id="j_idt74:streetName"]'</msg>
+<status status="PASS" endtime="20220505 12:50:13.318" starttime="20220505 12:50:13.227"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:number"]</arg>
+<arg>${e3_Number}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.319" level="INFO">Typing text '12' into text field '//*[@id="j_idt74:number"]'</msg>
+<status status="PASS" endtime="20220505 12:50:13.402" starttime="20220505 12:50:13.318"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:square"]</arg>
+<arg>${e3_Square}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.403" level="INFO">Typing text '200' into text field '//*[@id="j_idt74:square"]'</msg>
+<status status="PASS" endtime="20220505 12:50:13.491" starttime="20220505 12:50:13.403"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:isconnected"]</arg>
+<arg>${e3_IC}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.491" level="INFO">Selecting label(s) 'Lit' from list '//*[@id="j_idt74:isconnected"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:13.540" starttime="20220505 12:50:13.491"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.542" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:13.739" starttime="20220505 12:50:13.541"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:13.739" starttime="20220505 12:50:13.541"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/building/main.xhtml?id=10389&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.743" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/building/main.xhtml?id=10389&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:13.743" starttime="20220505 12:50:13.739"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:13.879" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:13.879" starttime="20220505 12:50:13.744"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:13.879" critical="yes" starttime="20220505 12:50:12.846"></status>
+</test>
+<test id="s1-s2-t6" name="&quot;Floor&quot; object (4)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/floor/main.xhtml?id=10390&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:13.879" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/floor/main.xhtml?id=10390&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:14.018" starttime="20220505 12:50:13.879"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.020" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:14.203" starttime="20220505 12:50:14.020"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:14.204" starttime="20220505 12:50:14.019"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:number"]</arg>
+<arg>${e4_Number}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.205" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:number"]'</msg>
+<status status="PASS" endtime="20220505 12:50:14.287" starttime="20220505 12:50:14.204"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:square"]</arg>
+<arg>${e4_Square}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.288" level="INFO">Typing text '75' into text field '//*[@id="j_idt74:square"]'</msg>
+<status status="PASS" endtime="20220505 12:50:14.368" starttime="20220505 12:50:14.287"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.369" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:14.593" starttime="20220505 12:50:14.369"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:14.593" starttime="20220505 12:50:14.369"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/floor/main.xhtml?id=10390&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.600" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/floor/main.xhtml?id=10390&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:14.600" starttime="20220505 12:50:14.593"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:14.729" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:14.729" starttime="20220505 12:50:14.601"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:14.745" critical="yes" starttime="20220505 12:50:13.879"></status>
+</test>
+<test id="s1-s2-t7" name="&quot;Rack&quot; object (5)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/rack/main.xhtml?id=10392&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.753" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/rack/main.xhtml?id=10392&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:14.890" starttime="20220505 12:50:14.751"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:14.891" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:15.018" starttime="20220505 12:50:14.891"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.019" starttime="20220505 12:50:14.891"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e5_Name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.022" level="INFO">Typing text 'Rack №1' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:15.119" starttime="20220505 12:50:15.021"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.120" starttime="20220505 12:50:15.020"></status>
+</kw>
+<kw name="Input Width">
+<arguments>
+<arg>${e5_Width}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:width"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.121" level="INFO">Typing text '20' into text field '//*[@id="j_idt74:width"]'</msg>
+<status status="PASS" endtime="20220505 12:50:15.208" starttime="20220505 12:50:15.121"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.208" starttime="20220505 12:50:15.120"></status>
+</kw>
+<kw name="Input Length">
+<arguments>
+<arg>${e5_Length}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:length"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.209" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:length"]'</msg>
+<status status="PASS" endtime="20220505 12:50:15.295" starttime="20220505 12:50:15.209"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.295" starttime="20220505 12:50:15.208"></status>
+</kw>
+<kw name="Input Height">
+<arguments>
+<arg>${e5_Height}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:height"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.298" level="INFO">Typing text '2' into text field '//*[@id="j_idt74:height"]'</msg>
+<status status="PASS" endtime="20220505 12:50:15.384" starttime="20220505 12:50:15.297"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.385" starttime="20220505 12:50:15.295"></status>
+</kw>
+<kw name="Input PS">
+<arguments>
+<arg>${e5_PS}</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:physicalStatus"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.386" level="INFO">Selecting label(s) 'In Service' from list '//*[@id="j_idt74:physicalStatus"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:15.432" starttime="20220505 12:50:15.386"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.432" starttime="20220505 12:50:15.385"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.434" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:15.644" starttime="20220505 12:50:15.433"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.644" starttime="20220505 12:50:15.433"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/rack/main.xhtml?id=10392&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.650" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/rack/main.xhtml?id=10392&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:15.651" starttime="20220505 12:50:15.645"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:15.794" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:15.794" starttime="20220505 12:50:15.651"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:15.794" critical="yes" starttime="20220505 12:50:14.745"></status>
+</test>
+<test id="s1-s2-t8" name="&quot;POS Terminal&quot; object (6)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/posterm/main.xhtml?id=10393&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.794" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/posterm/main.xhtml?id=10393&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:15.929" starttime="20220505 12:50:15.794"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:15.932" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:16.064" starttime="20220505 12:50:15.932"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.065" starttime="20220505 12:50:15.930"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e6_Name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.068" level="INFO">Typing text 'POS Terminal №1' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:16.175" starttime="20220505 12:50:16.067"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.176" starttime="20220505 12:50:16.065"></status>
+</kw>
+<kw name="Input Width">
+<arguments>
+<arg>${e6_Width}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:width"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.178" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:width"]'</msg>
+<status status="PASS" endtime="20220505 12:50:16.262" starttime="20220505 12:50:16.177"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.262" starttime="20220505 12:50:16.176"></status>
+</kw>
+<kw name="Input Length">
+<arguments>
+<arg>${e6_Length}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:length"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.265" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:length"]'</msg>
+<status status="PASS" endtime="20220505 12:50:16.349" starttime="20220505 12:50:16.263"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.350" starttime="20220505 12:50:16.263"></status>
+</kw>
+<kw name="Input Height">
+<arguments>
+<arg>${e6_Height}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:height"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.352" level="INFO">Typing text '2' into text field '//*[@id="j_idt74:height"]'</msg>
+<status status="PASS" endtime="20220505 12:50:16.433" starttime="20220505 12:50:16.351"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.434" starttime="20220505 12:50:16.350"></status>
+</kw>
+<kw name="Input PS">
+<arguments>
+<arg>${e6_PS}</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:physicalStatus"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.435" level="INFO">Selecting label(s) 'Planned' from list '//*[@id="j_idt74:physicalStatus"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:16.476" starttime="20220505 12:50:16.435"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.477" starttime="20220505 12:50:16.434"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.478" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:16.690" starttime="20220505 12:50:16.478"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.691" starttime="20220505 12:50:16.477"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/posterm/main.xhtml?id=10393&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.695" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/posterm/main.xhtml?id=10393&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:16.696" starttime="20220505 12:50:16.691"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:16.860" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:16.860" starttime="20220505 12:50:16.696"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:16.860" critical="yes" starttime="20220505 12:50:15.794"></status>
+</test>
+<test id="s1-s2-t9" name="&quot;Room&quot; object (7)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/room/main.xhtml?id=10391&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.860" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/room/main.xhtml?id=10391&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:16.995" starttime="20220505 12:50:16.860"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:16.997" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:17.135" starttime="20220505 12:50:16.996"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:17.136" starttime="20220505 12:50:16.995"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e7_Name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.138" level="INFO">Typing text 'Room #1' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:17.240" starttime="20220505 12:50:17.138"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:17.241" starttime="20220505 12:50:17.137"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:square"]</arg>
+<arg>${e7_Square}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.242" level="INFO">Typing text '20' into text field '//*[@id="j_idt74:square"]'</msg>
+<status status="PASS" endtime="20220505 12:50:17.320" starttime="20220505 12:50:17.241"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.322" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:17.528" starttime="20220505 12:50:17.321"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:17.528" starttime="20220505 12:50:17.321"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/room/main.xhtml?id=10391&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.537" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/room/main.xhtml?id=10391&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:17.538" starttime="20220505 12:50:17.528"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:17.678" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:17.678" starttime="20220505 12:50:17.538"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:17.678" critical="yes" starttime="20220505 12:50:16.860"></status>
+</test>
+<test id="s1-s2-t10" name="&quot;Pay Box&quot; object (8)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/paybox/main.xhtml?id=10394&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.678" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/paybox/main.xhtml?id=10394&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:17.820" starttime="20220505 12:50:17.678"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.823" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:17.955" starttime="20220505 12:50:17.822"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:17.956" starttime="20220505 12:50:17.821"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e8_Name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:17.957" level="INFO">Typing text 'Pay Box №1' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:18.058" starttime="20220505 12:50:17.957"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:18.059" starttime="20220505 12:50:17.956"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:secureProtocol"]</arg>
+<arg>${e8_SP}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.059" level="INFO">Typing text '3D Secure' into text field '//*[@id="j_idt74:secureProtocol"]'</msg>
+<status status="PASS" endtime="20220505 12:50:18.150" starttime="20220505 12:50:18.059"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:displaySize"]</arg>
+<arg>${e8_DS}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.152" level="INFO">Typing text '11' into text field '//*[@id="j_idt74:displaySize"]'</msg>
+<status status="PASS" endtime="20220505 12:50:18.238" starttime="20220505 12:50:18.151"></status>
+</kw>
+<kw name="Input PS">
+<arguments>
+<arg>${e8_PS}</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:physicalStatus"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.240" level="INFO">Selecting label(s) 'Planned' from list '//*[@id="j_idt74:physicalStatus"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:18.280" starttime="20220505 12:50:18.240"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:18.280" starttime="20220505 12:50:18.239"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.280" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:18.480" starttime="20220505 12:50:18.280"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:18.482" starttime="20220505 12:50:18.280"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/paybox/main.xhtml?id=10394&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.487" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/paybox/main.xhtml?id=10394&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:18.488" starttime="20220505 12:50:18.483"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:18.598" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:18.598" starttime="20220505 12:50:18.488"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:18.598" critical="yes" starttime="20220505 12:50:17.678"></status>
+</test>
+<test id="s1-s2-t11" name="&quot;ATM&quot; object (9)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/atm/main.xhtml?id=10395&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.598" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/atm/main.xhtml?id=10395&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:18.739" starttime="20220505 12:50:18.598"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.741" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:18.869" starttime="20220505 12:50:18.740"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:18.870" starttime="20220505 12:50:18.739"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e9_Name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.872" level="INFO">Typing text 'ATM №1' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:18.972" starttime="20220505 12:50:18.871"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:18.972" starttime="20220505 12:50:18.870"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:connectionType"]</arg>
+<arg>${e9_CT}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:18.973" level="INFO">Typing text 'BoxTR Router' into text field '//*[@id="j_idt74:connectionType"]'</msg>
+<status status="PASS" endtime="20220505 12:50:19.070" starttime="20220505 12:50:18.973"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:extraSecurity"]</arg>
+<arg>${e9_ES}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:19.071" level="INFO">Typing text 'Vibration sensor' into text field '//*[@id="j_idt74:extraSecurity"]'</msg>
+<status status="PASS" endtime="20220505 12:50:19.172" starttime="20220505 12:50:19.070"></status>
+</kw>
+<kw name="Input PS">
+<arguments>
+<arg>${e9_PS}</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:physicalStatus"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:19.174" level="INFO">Selecting label(s) 'Planned' from list '//*[@id="j_idt74:physicalStatus"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:19.215" starttime="20220505 12:50:19.173"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:19.215" starttime="20220505 12:50:19.173"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:19.215" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:19.426" starttime="20220505 12:50:19.215"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:19.427" starttime="20220505 12:50:19.215"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/atm/main.xhtml?id=10395&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:19.433" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/atm/main.xhtml?id=10395&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:19.433" starttime="20220505 12:50:19.427"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:19.562" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:19.562" starttime="20220505 12:50:19.434"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:19.562" critical="yes" starttime="20220505 12:50:18.598"></status>
+</test>
+<test id="s1-s2-t12" name="&quot;Device&quot; object">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/device/main.xhtml?id=10396&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:19.562" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/device/main.xhtml?id=10396&amp;tabIndex=0'</msg>
+<status status="PASS" endtime="20220505 12:50:20.014" starttime="20220505 12:50:19.562"></status>
+</kw>
+<kw name="Click Edit">
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.018" level="INFO">Clicking link '//*[@id="table_header"]/table/tbody/tr/td/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:20.154" starttime="20220505 12:50:20.017"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:20.155" starttime="20220505 12:50:20.016"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${e10_Name}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.157" level="INFO">Typing text 'DVC' into text field '//*[@id="j_idt74:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.257" starttime="20220505 12:50:20.156"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:20.258" starttime="20220505 12:50:20.155"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:macAddress"]</arg>
+<arg>${e10_MAC}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.258" level="INFO">Typing text '00-17-ab-be-28-1c' into text field '//*[@id="j_idt74:macAddress"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.360" starttime="20220505 12:50:20.258"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:ram"]</arg>
+<arg>${e10_RAM}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.362" level="INFO">Typing text '8' into text field '//*[@id="j_idt74:ram"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.440" starttime="20220505 12:50:20.361"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:cpu"]</arg>
+<arg>${e10_CPU}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.441" level="INFO">Typing text 'Intel 2A 3.3 Ghz' into text field '//*[@id="j_idt74:cpu"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.544" starttime="20220505 12:50:20.441"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:ipAddress"]</arg>
+<arg>${e10_IP}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.545" level="INFO">Typing text '5.126.230.58' into text field '//*[@id="j_idt74:ipAddress"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.641" starttime="20220505 12:50:20.545"></status>
+</kw>
+<kw name="Input PS">
+<arguments>
+<arg>${e10_PS}</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt74:physicalStatus"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.643" level="INFO">Selecting label(s) 'Planned' from list '//*[@id="j_idt74:physicalStatus"]'.</msg>
+<status status="PASS" endtime="20220505 12:50:20.682" starttime="20220505 12:50:20.643"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:20.682" starttime="20220505 12:50:20.642"></status>
+</kw>
+<kw name="Input Width">
+<arguments>
+<arg>${e10_Width}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:width"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.682" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:width"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.772" starttime="20220505 12:50:20.682"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:20.772" starttime="20220505 12:50:20.682"></status>
+</kw>
+<kw name="Input Length">
+<arguments>
+<arg>${e10_Length}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:length"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.774" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:length"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.852" starttime="20220505 12:50:20.773"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:20.852" starttime="20220505 12:50:20.773"></status>
+</kw>
+<kw name="Input Height">
+<arguments>
+<arg>${e10_Height}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt74:height"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.854" level="INFO">Typing text '1' into text field '//*[@id="j_idt74:height"]'</msg>
+<status status="PASS" endtime="20220505 12:50:20.935" starttime="20220505 12:50:20.853"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:20.935" starttime="20220505 12:50:20.853"></status>
+</kw>
+<kw name="Click Save">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="table_header"]/table/tbody/tr/td[1]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:20.936" level="INFO">Clicking button '//*[@id="table_header"]/table/tbody/tr/td[1]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:21.186" starttime="20220505 12:50:20.936"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:21.187" starttime="20220505 12:50:20.935"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/device/main.xhtml?id=10396&amp;tabIndex=0</arg>
+</arguments>
+<msg timestamp="20220505 12:50:21.192" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/device/main.xhtml?id=10396&amp;tabIndex=0'.</msg>
+<status status="PASS" endtime="20220505 12:50:21.192" starttime="20220505 12:50:21.188"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:21.296" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:21.296" starttime="20220505 12:50:21.193"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:21.296" critical="yes" starttime="20220505 12:50:19.562"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220505 12:50:22.451" starttime="20220505 12:50:21.296"></status>
+</kw>
+<status status="FAIL" endtime="20220505 12:50:22.451" starttime="20220505 12:50:06.250"></status>
+</suite>
+<suite source="E:\Документы\Курсы\Test Automation\Итоговая лабораторная работа (inventory)\InventoryTests\Registration.robot" id="s1-s3" name="Registration">
+<kw type="setup" name="Go to RegistrationPage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/registration.xhtml</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220505 12:50:22.482" level="INFO">Opening browser 'chrome' to base url 'https://inventory.edu-netcracker.com/pages/registration.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:24.409" starttime="20220505 12:50:22.482"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:24.410" starttime="20220505 12:50:22.482"></status>
+</kw>
+<test id="s1-s3-t1" name="Displaying a web form of registration">
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[1]/td[1]</arg>
+<arg>Username*:</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.416" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[1]/td[1]' contains text 'Username*:'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.469" starttime="20220505 12:50:24.412"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[1]/td[2]</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.484" level="INFO">Current page contains element '//*[@id="registerForm"]/table/tbody/tr[1]/td[2]'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.484" starttime="20220505 12:50:24.469"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[2]/td[1]</arg>
+<arg>Password*:</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.484" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[2]/td[1]' contains text 'Password*:'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.531" starttime="20220505 12:50:24.484"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[2]/td[2]</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.547" level="INFO">Current page contains element '//*[@id="registerForm"]/table/tbody/tr[2]/td[2]'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.547" starttime="20220505 12:50:24.531"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[3]/td[1]</arg>
+<arg>Repeat Password*:</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.547" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[3]/td[1]' contains text 'Repeat Password*:'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.578" starttime="20220505 12:50:24.547"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[3]/td[2]</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.594" level="INFO">Current page contains element '//*[@id="registerForm"]/table/tbody/tr[3]/td[2]'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.594" starttime="20220505 12:50:24.578"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[5]/td[1]</arg>
+<arg>Email*:</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.594" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[5]/td[1]' contains text 'Email*:'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.625" starttime="20220505 12:50:24.594"></status>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<doc>Verifies element identified by `locator` is found on the current page.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[5]/td[2]</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.651" level="INFO">Current page contains element '//*[@id="registerForm"]/table/tbody/tr[5]/td[2]'.</msg>
+<status status="PASS" endtime="20220505 12:50:24.651" starttime="20220505 12:50:24.625"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:24.897" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:24.897" starttime="20220505 12:50:24.652"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:24.897" critical="yes" starttime="20220505 12:50:24.411"></status>
+</test>
+<test id="s1-s3-t2" name="Registration with username which was already registred">
+<kw name="Input Username">
+<arguments>
+<arg>User10</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:username"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:24.897" level="INFO">Typing text 'User10' into text field '//*[@id="registerForm:username"]'</msg>
+<status status="PASS" endtime="20220505 12:50:25.014" starttime="20220505 12:50:24.897"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.014" starttime="20220505 12:50:24.897"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.014" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:25.152" starttime="20220505 12:50:25.014"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.152" starttime="20220505 12:50:25.014"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>User with such login already exists.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.168" level="INFO">Current page contains text 'User with such login already exists.'.</msg>
+<status status="PASS" endtime="20220505 12:50:25.169" starttime="20220505 12:50:25.153"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:25.265" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:25.265" starttime="20220505 12:50:25.170"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.265" critical="yes" starttime="20220505 12:50:24.897"></status>
+</test>
+<test id="s1-s3-t3" name="Correctness of entering the value in the field: Username">
+<kw name="Input Username">
+<arguments>
+<arg>Usserr22</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:username"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.280" level="INFO">Typing text 'Usserr22' into text field '//*[@id="registerForm:username"]'</msg>
+<status status="PASS" endtime="20220505 12:50:25.378" starttime="20220505 12:50:25.265"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.379" starttime="20220505 12:50:25.265"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.381" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:25.485" starttime="20220505 12:50:25.381"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.485" starttime="20220505 12:50:25.380"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[1]/td[3]</arg>
+<arg>?</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.486" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[1]/td[3]' contains exactly text '?'.</msg>
+<status status="PASS" endtime="20220505 12:50:25.521" starttime="20220505 12:50:25.485"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:25.630" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:25.646" starttime="20220505 12:50:25.522"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.646" critical="yes" starttime="20220505 12:50:25.265"></status>
+</test>
+<test id="s1-s3-t4" name="Invalid length for the &quot;Username&quot; text field">
+<kw name="Input Username">
+<arguments>
+<arg>Usr</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:username"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.646" level="INFO">Typing text 'Usr' into text field '//*[@id="registerForm:username"]'</msg>
+<status status="PASS" endtime="20220505 12:50:25.738" starttime="20220505 12:50:25.646"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.739" starttime="20220505 12:50:25.646"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.740" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:25.847" starttime="20220505 12:50:25.740"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.848" starttime="20220505 12:50:25.739"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Login must be alphanumeric string with length =&gt; 6 and &lt;= 50.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.867" level="INFO">Current page contains text 'Login must be alphanumeric string with length =&gt; 6 and &lt;= 50.'.</msg>
+<status status="PASS" endtime="20220505 12:50:25.868" starttime="20220505 12:50:25.849"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:25.980" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:25.980" starttime="20220505 12:50:25.868"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:25.980" critical="yes" starttime="20220505 12:50:25.646"></status>
+</test>
+<test id="s1-s3-t5" name="Mandatory filling in the &quot;Username&quot; textbox field">
+<kw name="Input Username">
+<arguments>
+<arg>${empty}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:username"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:25.995" level="INFO">Typing text '' into text field '//*[@id="registerForm:username"]'</msg>
+<status status="PASS" endtime="20220505 12:50:26.088" starttime="20220505 12:50:25.995"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.089" starttime="20220505 12:50:25.995"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.091" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:26.203" starttime="20220505 12:50:26.090"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.204" starttime="20220505 12:50:26.089"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Login must not be empty.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.222" level="INFO">Current page contains text 'Login must not be empty.'.</msg>
+<status status="PASS" endtime="20220505 12:50:26.223" starttime="20220505 12:50:26.204"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:26.315" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:26.315" starttime="20220505 12:50:26.224"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.315" critical="yes" starttime="20220505 12:50:25.980"></status>
+</test>
+<test id="s1-s3-t6" name="Correctness of entering the value in the field: Password">
+<kw name="Input Password">
+<arguments>
+<arg>Paaaasss3#</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:password"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.331" level="INFO">Typing text 'Paaaasss3#' into text field '//*[@id="registerForm:password"]'</msg>
+<status status="PASS" endtime="20220505 12:50:26.436" starttime="20220505 12:50:26.315"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.437" starttime="20220505 12:50:26.315"></status>
+</kw>
+<kw name="Input RePassword">
+<arguments>
+<arg>Paaaasss3#</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:confirmPassword"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.438" level="INFO">Typing text 'Paaaasss3#' into text field '//*[@id="registerForm:confirmPassword"]'</msg>
+<status status="PASS" endtime="20220505 12:50:26.541" starttime="20220505 12:50:26.437"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.542" starttime="20220505 12:50:26.437"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.544" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:26.660" starttime="20220505 12:50:26.543"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.660" starttime="20220505 12:50:26.542"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[2]/td[3]</arg>
+<arg>?</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.661" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[2]/td[3]' contains exactly text '?'.</msg>
+<status status="PASS" endtime="20220505 12:50:26.697" starttime="20220505 12:50:26.660"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:26.781" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:26.781" starttime="20220505 12:50:26.698"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.781" critical="yes" starttime="20220505 12:50:26.315"></status>
+</test>
+<test id="s1-s3-t7" name="Invalid length for the &quot;Password&quot; text field">
+<kw name="Input Password">
+<arguments>
+<arg>Pa8</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:password"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.781" level="INFO">Typing text 'Pa8' into text field '//*[@id="registerForm:password"]'</msg>
+<status status="PASS" endtime="20220505 12:50:26.881" starttime="20220505 12:50:26.781"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.882" starttime="20220505 12:50:26.781"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:26.884" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:26.991" starttime="20220505 12:50:26.883"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:26.991" starttime="20220505 12:50:26.883"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Password length must me &gt;= 8 and &lt;= 50.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.007" level="INFO">Current page contains text 'Password length must me &gt;= 8 and &lt;= 50.'.</msg>
+<status status="PASS" endtime="20220505 12:50:27.008" starttime="20220505 12:50:26.992"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:27.109" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:27.109" starttime="20220505 12:50:27.008"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.110" critical="yes" starttime="20220505 12:50:26.781"></status>
+</test>
+<test id="s1-s3-t8" name="Mandatory filling in the &quot;Password&quot; textbox field">
+<kw name="Input Password">
+<arguments>
+<arg>${empty}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:password"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.112" level="INFO">Typing text '' into text field '//*[@id="registerForm:password"]'</msg>
+<status status="PASS" endtime="20220505 12:50:27.192" starttime="20220505 12:50:27.112"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.192" starttime="20220505 12:50:27.111"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.194" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:27.306" starttime="20220505 12:50:27.193"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.306" starttime="20220505 12:50:27.193"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Please enter password.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.323" level="INFO">Current page contains text 'Please enter password.'.</msg>
+<status status="PASS" endtime="20220505 12:50:27.323" starttime="20220505 12:50:27.307"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:27.430" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:27.430" starttime="20220505 12:50:27.324"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.430" critical="yes" starttime="20220505 12:50:27.111"></status>
+</test>
+<test id="s1-s3-t9" name="Correctness of entering the value in the field: Repeat Password">
+<kw name="Input Password">
+<arguments>
+<arg>Paaaasss3#</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:password"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.430" level="INFO">Typing text 'Paaaasss3#' into text field '//*[@id="registerForm:password"]'</msg>
+<status status="PASS" endtime="20220505 12:50:27.543" starttime="20220505 12:50:27.430"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.544" starttime="20220505 12:50:27.430"></status>
+</kw>
+<kw name="Input RePassword">
+<arguments>
+<arg>Paaaasss3#</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:confirmPassword"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.545" level="INFO">Typing text 'Paaaasss3#' into text field '//*[@id="registerForm:confirmPassword"]'</msg>
+<status status="PASS" endtime="20220505 12:50:27.637" starttime="20220505 12:50:27.544"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.638" starttime="20220505 12:50:27.544"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.639" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:27.751" starttime="20220505 12:50:27.639"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.752" starttime="20220505 12:50:27.638"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[2]/td[3]</arg>
+<arg>?</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.753" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[2]/td[3]' contains exactly text '?'.</msg>
+<status status="PASS" endtime="20220505 12:50:27.785" starttime="20220505 12:50:27.752"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[3]/td[3]</arg>
+<arg>?</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.786" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[3]/td[3]' contains exactly text '?'.</msg>
+<status status="PASS" endtime="20220505 12:50:27.812" starttime="20220505 12:50:27.785"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:27.946" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:27.946" starttime="20220505 12:50:27.813"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:27.946" critical="yes" starttime="20220505 12:50:27.430"></status>
+</test>
+<test id="s1-s3-t10" name="Mandatory filling in the &quot;Repeat Password&quot; textbox field">
+<kw name="Input RePassword">
+<arguments>
+<arg>${empty}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:confirmPassword"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:27.946" level="INFO">Typing text '' into text field '//*[@id="registerForm:confirmPassword"]'</msg>
+<status status="PASS" endtime="20220505 12:50:28.030" starttime="20220505 12:50:27.946"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.031" starttime="20220505 12:50:27.946"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.033" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:28.144" starttime="20220505 12:50:28.032"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.145" starttime="20220505 12:50:28.032"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Please enter confirm password</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.162" level="INFO">Current page contains text 'Please enter confirm password'.</msg>
+<status status="PASS" endtime="20220505 12:50:28.162" starttime="20220505 12:50:28.145"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:28.280" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:28.280" starttime="20220505 12:50:28.162"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.280" critical="yes" starttime="20220505 12:50:27.946"></status>
+</test>
+<test id="s1-s3-t11" name="Match with the confirmation password">
+<kw name="Input Password">
+<arguments>
+<arg>Paaaasss3#</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:password"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.296" level="INFO">Typing text 'Paaaasss3#' into text field '//*[@id="registerForm:password"]'</msg>
+<status status="PASS" endtime="20220505 12:50:28.396" starttime="20220505 12:50:28.280"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.396" starttime="20220505 12:50:28.280"></status>
+</kw>
+<kw name="Input RePassword">
+<arguments>
+<arg>Pasword4+</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:confirmPassword"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.398" level="INFO">Typing text 'Pasword4+' into text field '//*[@id="registerForm:confirmPassword"]'</msg>
+<status status="PASS" endtime="20220505 12:50:28.491" starttime="20220505 12:50:28.397"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.492" starttime="20220505 12:50:28.397"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.493" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:28.612" starttime="20220505 12:50:28.493"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.613" starttime="20220505 12:50:28.492"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Password must match confirm password.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.631" level="INFO">Current page contains text 'Password must match confirm password.'.</msg>
+<status status="PASS" endtime="20220505 12:50:28.631" starttime="20220505 12:50:28.613"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:28.762" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:28.762" starttime="20220505 12:50:28.632"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.762" critical="yes" starttime="20220505 12:50:28.280"></status>
+</test>
+<test id="s1-s3-t12" name="Correctness of entering the value in the field: Email">
+<kw name="Input Email">
+<arguments>
+<arg>user4@testmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:email"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.762" level="INFO">Typing text 'user4@testmail.com' into text field '//*[@id="registerForm:email"]'</msg>
+<status status="PASS" endtime="20220505 12:50:28.883" starttime="20220505 12:50:28.762"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.884" starttime="20220505 12:50:28.762"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.885" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:28.996" starttime="20220505 12:50:28.885"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:28.996" starttime="20220505 12:50:28.884"></status>
+</kw>
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies element identified by `locator` exactly contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[5]/td[3]</arg>
+<arg>?</arg>
+</arguments>
+<msg timestamp="20220505 12:50:28.998" level="INFO">Verifying element '//*[@id="registerForm"]/table/tbody/tr[5]/td[3]' contains exactly text '?'.</msg>
+<status status="PASS" endtime="20220505 12:50:29.035" starttime="20220505 12:50:28.997"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:29.131" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:29.131" starttime="20220505 12:50:29.036"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.131" critical="yes" starttime="20220505 12:50:28.762"></status>
+</test>
+<test id="s1-s3-t13" name="Presence of the '@' symbol">
+<kw name="Input Email">
+<arguments>
+<arg>user3testmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:email"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.131" level="INFO">Typing text 'user3testmail.com' into text field '//*[@id="registerForm:email"]'</msg>
+<status status="PASS" endtime="20220505 12:50:29.252" starttime="20220505 12:50:29.131"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.252" starttime="20220505 12:50:29.131"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.254" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:29.361" starttime="20220505 12:50:29.253"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.361" starttime="20220505 12:50:29.253"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>Email address is incorrect.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.379" level="INFO">Current page contains text 'Email address is incorrect.'.</msg>
+<status status="PASS" endtime="20220505 12:50:29.380" starttime="20220505 12:50:29.362"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:29.513" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:29.513" starttime="20220505 12:50:29.380"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.513" critical="yes" starttime="20220505 12:50:29.131"></status>
+</test>
+<test id="s1-s3-t14" name="Mandatory filling in the &quot;Email&quot; textbox field">
+<kw name="Input Email">
+<arguments>
+<arg>${empty}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:email"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.513" level="INFO">Typing text '' into text field '//*[@id="registerForm:email"]'</msg>
+<status status="PASS" endtime="20220505 12:50:29.601" starttime="20220505 12:50:29.513"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.602" starttime="20220505 12:50:29.513"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.605" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:29.721" starttime="20220505 12:50:29.604"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.722" starttime="20220505 12:50:29.603"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>email field can't be empty</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.737" level="INFO">Current page contains text 'email field can't be empty'.</msg>
+<status status="PASS" endtime="20220505 12:50:29.737" starttime="20220505 12:50:29.722"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:29.847" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:29.847" starttime="20220505 12:50:29.738"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.847" critical="yes" starttime="20220505 12:50:29.513"></status>
+</test>
+<test id="s1-s3-t15" name="Existing email">
+<kw name="Input Email">
+<arguments>
+<arg>userr2@testmail.com</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm:email"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.847" level="INFO">Typing text 'userr2@testmail.com' into text field '//*[@id="registerForm:email"]'</msg>
+<status status="PASS" endtime="20220505 12:50:29.970" starttime="20220505 12:50:29.847"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:29.970" starttime="20220505 12:50:29.847"></status>
+</kw>
+<kw name="Click Registration">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:29.971" level="INFO">Clicking button '//*[@id="registerForm"]/table/tbody/tr[7]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:30.071" starttime="20220505 12:50:29.971"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:30.071" starttime="20220505 12:50:29.970"></status>
+</kw>
+<kw name="Page Should Contain" library="Selenium2Library">
+<doc>Verifies that current page contains `text`.</doc>
+<arguments>
+<arg>The user with such email address has been already registered. Please fill out another email address.</arg>
+</arguments>
+<msg timestamp="20220505 12:50:30.103" level="INFO">&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;head&gt;&lt;link type="text/css" rel="stylesheet" href="/javax.faces.resource/default.css.xhtml?ln=css"&gt;
+	&lt;title&gt;Registration&lt;/title&gt;&lt;script type="text/javascript" src="/javax.faces.resource/registration.js.xhtml?ln=javascript"&gt;&lt;/script&gt;&lt;/head&gt;&lt;body onload="showPassword(this.registerForm)"&gt;
+	&lt;div id="wrapper"&gt;
+		&lt;div id="header"&gt;Software Logo&lt;/div&gt;
+			
+		&lt;div id="content" style="margin-top:50px;"&gt;
+&lt;form id="registerForm" name="registerForm" method="post" action="/pages/registration.xhtml"&gt;
+&lt;input type="hidden" name="registerForm" value="registerForm"&gt;
+
+	        	&lt;table&gt;
+	             	&lt;tbody&gt;&lt;tr&gt;
+	             		&lt;td&gt;Username&lt;sup class="required"&gt;*&lt;/sup&gt;:&lt;/td&gt;
+	                	&lt;td&gt;&lt;input id="registerForm:username" type="text" name="registerForm:username" value="" maxlength="50"&gt;
+	                   	&lt;/td&gt;
+		               	&lt;td&gt;
+		                 	&lt;label title="Login must contain only alphanumeric characters and contain at least 6 characters"&gt;?&lt;/label&gt;&lt;span class="error"&gt;Login must not be empty.&lt;/span&gt;
+		               	&lt;/td&gt;
+	                 &lt;/tr&gt;
+	                 &lt;tr&gt;
+		                 &lt;td&gt;Password&lt;sup class="required"&gt;*&lt;/sup&gt;:&lt;/td&gt;
+	                     &lt;td&gt;&lt;input id="registerForm:password" type="password" name="registerForm:password" value="" maxlength="50"&gt;
+	                     &lt;/td&gt;
+	                     &lt;td&gt;
+	                     	&lt;label title="The Password must have at least 8 characters, at least 1 digit, at least 1 lower case letter, at least 1 upper case letter, at least 1 non-alphanumeric character"&gt;?&lt;/label&gt;&lt;span class="error"&gt;Please enter password.&lt;/span&gt;
+	                    &lt;/td&gt;
+					&lt;/tr&gt;
+	                    &lt;tr&gt;
+	                        &lt;td&gt;Repeat Password&lt;sup class="required"&gt;*&lt;/sup&gt;:&lt;/td&gt;
+	                        &lt;td&gt;&lt;input id="registerForm:confirmPassword" type="password" name="registerForm:confirmPassword" value="" maxlength="50"&gt;
+	                        &lt;/td&gt;
+	                        &lt;td&gt;
+	                            &lt;label title="The Repeat password must be the same as the Password"&gt;?&lt;/label&gt;&lt;span class="error"&gt;Please enter confirm password&lt;/span&gt;
+	                        &lt;/td&gt;
+	                    &lt;/tr&gt;
+	                    &lt;tr&gt;
+	                        &lt;td&gt;
+	                        	Unmask password:
+	                        &lt;/td&gt;
+	                        &lt;td&gt;&lt;input id="registerForm:hide" type="checkbox" name="registerForm:hide" onclick="showPassword(this.form)"&gt;
+	                        &lt;/td&gt;
+	                    &lt;/tr&gt;
+	                    &lt;tr&gt;
+	                        &lt;td&gt;Email&lt;sup class="required"&gt;*&lt;/sup&gt;:&lt;/td&gt;
+	                        &lt;td&gt;&lt;input id="registerForm:email" type="text" name="registerForm:email" value="userr2@testmail.com" maxlength="50"&gt;
+	                        &lt;/td&gt;
+	                        &lt;td&gt;
+	                            &lt;label title="Enter here valid e-mail address"&gt;?&lt;/label&gt;
+	                        &lt;/td&gt;
+	                    &lt;/tr&gt;
+	                    &lt;tr&gt;
+	                        &lt;td&gt;Role:&lt;/td&gt;
+	                        &lt;td&gt;&lt;select id="registerForm:role" name="registerForm:role" size="1"&gt;	&lt;option value="RO" selected="selected"&gt;Read Only&lt;/option&gt;
+	&lt;option value="RW"&gt;Read / Write&lt;/option&gt;
+	&lt;option value="Admin"&gt;Admin&lt;/option&gt;
+&lt;/select&gt;
+	                        &lt;/td&gt;
+	                        &lt;td&gt;
+	                            &lt;label title="Pick corresponding role"&gt;?&lt;/label&gt;
+	                        &lt;/td&gt;
+	                    &lt;/tr&gt;
+	                    &lt;tr&gt;
+	                        &lt;td&gt;&lt;/td&gt;
+	                        &lt;td&gt;&lt;input type="submit" name="registerForm:j_idt26" value="Regisration" class="button"&gt;&lt;a href="/login.jsp" style="margin-left: 5px" class="button"&gt;Login&lt;/a&gt;
+	                        &lt;/td&gt;
+	                    &lt;/tr&gt;
+	                &lt;/tbody&gt;&lt;/table&gt;&lt;input type="hidden" name="javax.faces.ViewState" id="j_id1:javax.faces.ViewState:0" value="-7471830836363463440:-5813643480992817982" autocomplete="off"&gt;
+&lt;/form&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:30.197" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:30.197" starttime="20220505 12:50:30.104"></status>
+</kw>
+<msg timestamp="20220505 12:50:30.213" level="FAIL">Page should have contained text 'The user with such email address has been already registered. Please fill out another email address.' but did not</msg>
+<status status="FAIL" endtime="20220505 12:50:30.213" starttime="20220505 12:50:30.072"></status>
+</kw>
+<status status="FAIL" endtime="20220505 12:50:30.213" critical="yes" starttime="20220505 12:50:29.847">Page should have contained text 'The user with such email address has been already registered. Please fill out another email address.' but did not</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220505 12:50:31.401" starttime="20220505 12:50:30.213"></status>
+</kw>
+<status status="FAIL" endtime="20220505 12:50:31.401" starttime="20220505 12:50:22.467"></status>
+</suite>
+<suite source="E:\Документы\Курсы\Test Automation\Итоговая лабораторная работа (inventory)\InventoryTests\Start_Page + Search.robot" id="s1-s4" name="Start Page + Search">
+<kw type="setup" name="Go to Start Page">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/login.jsp</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220505 12:50:31.416" level="INFO">Opening browser 'chrome' to base url 'https://inventory.edu-netcracker.com/login.jsp'</msg>
+<status status="PASS" endtime="20220505 12:50:33.302" starttime="20220505 12:50:31.416"></status>
+</kw>
+<kw name="Input Username">
+<arguments>
+<arg>ivan_grachev</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:33.305" level="INFO">Typing text 'ivan_grachev' into text field '//*[@id="content"]/form/table/tbody/tr[1]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:33.429" starttime="20220505 12:50:33.304"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:33.429" starttime="20220505 12:50:33.302"></status>
+</kw>
+<kw name="Input Password">
+<arguments>
+<arg>8vx-gpx-eee-eFi</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:33.429" level="INFO">Typing text '8vx-gpx-eee-eFi' into text field '//*[@id="content"]/form/table/tbody/tr[2]/td[2]/input'</msg>
+<status status="PASS" endtime="20220505 12:50:33.543" starttime="20220505 12:50:33.429"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:33.543" starttime="20220505 12:50:33.429"></status>
+</kw>
+<kw name="Click Login">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:33.543" level="INFO">Clicking button '//*[@id="content"]/form/table/tbody/tr[3]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:33.767" starttime="20220505 12:50:33.543"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:33.767" starttime="20220505 12:50:33.543"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:33.768" starttime="20220505 12:50:31.416"></status>
+</kw>
+<test id="s1-s4-t1" name="Checking the &quot;Navigation&quot; drop-down list: &quot;Inventory&quot;">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:33.771" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:33.845" starttime="20220505 12:50:33.770"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:33.846" level="INFO">Simulating Mouse Over on element '//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a'</msg>
+<status status="PASS" endtime="20220505 12:50:33.891" starttime="20220505 12:50:33.845"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:33.892" level="INFO">Clicking link '//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:34.245" starttime="20220505 12:50:33.892"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.245" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2'.</msg>
+<status status="PASS" endtime="20220505 12:50:34.245" starttime="20220505 12:50:34.245"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:34.446" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:34.446" starttime="20220505 12:50:34.245"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:34.446" critical="yes" starttime="20220505 12:50:33.769"></status>
+</test>
+<test id="s1-s4-t2" name="Checking the &quot;Navigation&quot; drop-down list: &quot;Tools&quot;">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.446" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:34.560" starttime="20220505 12:50:34.446"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.561" level="INFO">Simulating Mouse Over on element '//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/a'</msg>
+<status status="PASS" endtime="20220505 12:50:34.585" starttime="20220505 12:50:34.560"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[3]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.586" level="INFO">Clicking link '//*[@id="navigation_toolbar"]/table/tbody/tr/td[1]/ul/li/ul/li[3]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:34.715" starttime="20220505 12:50:34.586"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/tools/tools.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.721" level="INFO">Current location is 'https://inventory.edu-netcracker.com/tools/tools.xhtml'.</msg>
+<status status="PASS" endtime="20220505 12:50:34.722" starttime="20220505 12:50:34.716"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:34.827" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:34.827" starttime="20220505 12:50:34.722"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:34.828" critical="yes" starttime="20220505 12:50:34.446"></status>
+</test>
+<test id="s1-s4-t3" name="Link image: &quot;Inventory&quot;">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.830" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:34.900" starttime="20220505 12:50:34.830"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="inventory"]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:34.900" level="INFO">Clicking link '//*[@id="inventory"]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:35.211" starttime="20220505 12:50:34.900"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.215" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/inventory.xhtml?id=2'.</msg>
+<status status="PASS" endtime="20220505 12:50:35.215" starttime="20220505 12:50:35.212"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:35.313" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:35.313" starttime="20220505 12:50:35.215"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:35.313" critical="yes" starttime="20220505 12:50:34.829"></status>
+</test>
+<test id="s1-s4-t4" name="Link image: &quot;Infrastructure orders&quot;">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.313" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:35.429" starttime="20220505 12:50:35.313"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="infrastructure"]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.432" level="INFO">Clicking link '//*[@id="infrastructure"]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:35.484" starttime="20220505 12:50:35.431"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/infrastructure/infrastructure.xhtml</arg>
+</arguments>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:35.592" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-33.png"&gt;&lt;img src="selenium-screenshot-33.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:35.592" starttime="20220505 12:50:35.489"></status>
+</kw>
+<msg timestamp="20220505 12:50:35.594" level="FAIL">Location should have been 'https://inventory.edu-netcracker.com/pages/infrastructure/infrastructure.xhtml' but was 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="FAIL" endtime="20220505 12:50:35.594" starttime="20220505 12:50:35.485"></status>
+</kw>
+<status status="FAIL" endtime="20220505 12:50:35.595" critical="yes" starttime="20220505 12:50:35.313">Location should have been 'https://inventory.edu-netcracker.com/pages/infrastructure/infrastructure.xhtml' but was 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</status>
+</test>
+<test id="s1-s4-t5" name="Access to the country search page">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.598" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:35.653" starttime="20220505 12:50:35.597"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="search-text-input"]</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.654" level="INFO">Simulating Mouse Over on element '//*[@id="search-text-input"]'</msg>
+<status status="PASS" endtime="20220505 12:50:35.684" starttime="20220505 12:50:35.654"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[2]/ul/li/ul/li[1]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.686" level="INFO">Clicking link '//*[@id="navigation_toolbar"]/table/tbody/tr/td[2]/ul/li/ul/li[1]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:35.856" starttime="20220505 12:50:35.685"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/country/search.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:35.861" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/country/search.xhtml'.</msg>
+<status status="PASS" endtime="20220505 12:50:35.861" starttime="20220505 12:50:35.856"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:36.098" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-34.png"&gt;&lt;img src="selenium-screenshot-34.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:36.098" starttime="20220505 12:50:35.862"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:36.098" critical="yes" starttime="20220505 12:50:35.596"></status>
+</test>
+<test id="s1-s4-t6" name="Access to the city search page">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.113" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:36.200" starttime="20220505 12:50:36.113"></status>
+</kw>
+<kw name="Mouse Over" library="Selenium2Library">
+<doc>Simulates hovering mouse over the element specified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="search-text-input"]</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.201" level="INFO">Simulating Mouse Over on element '//*[@id="search-text-input"]'</msg>
+<status status="PASS" endtime="20220505 12:50:36.234" starttime="20220505 12:50:36.201"></status>
+</kw>
+<kw name="Click Link" library="Selenium2Library">
+<doc>Clicks a link identified by locator.</doc>
+<arguments>
+<arg>//*[@id="navigation_toolbar"]/table/tbody/tr/td[2]/ul/li/ul/li[2]/a</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.236" level="INFO">Clicking link '//*[@id="navigation_toolbar"]/table/tbody/tr/td[2]/ul/li/ul/li[2]/a'.</msg>
+<status status="PASS" endtime="20220505 12:50:36.381" starttime="20220505 12:50:36.235"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/city/search.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.387" level="INFO">Current location is 'https://inventory.edu-netcracker.com/pages/inventory/city/search.xhtml'.</msg>
+<status status="PASS" endtime="20220505 12:50:36.387" starttime="20220505 12:50:36.382"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:36.514" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-35.png"&gt;&lt;img src="selenium-screenshot-35.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:36.514" starttime="20220505 12:50:36.388"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:36.514" critical="yes" starttime="20220505 12:50:36.113"></status>
+</test>
+<test id="s1-s4-t7" name="The work of the search on the home page">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/startpage.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.514" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/startpage.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:36.606" starttime="20220505 12:50:36.514"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="search-text-input"]</arg>
+<arg>Russia</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.607" level="INFO">Typing text 'Russia' into text field '//*[@id="search-text-input"]'</msg>
+<status status="PASS" endtime="20220505 12:50:36.705" starttime="20220505 12:50:36.607"></status>
+</kw>
+<kw name="Press Key" library="Selenium2Library">
+<doc>Simulates user pressing key on element identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="search-text-input"]</arg>
+<arg>\\13</arg>
+</arguments>
+<status status="PASS" endtime="20220505 12:50:36.884" starttime="20220505 12:50:36.706"></status>
+</kw>
+<kw name="Location Should Be" library="Selenium2Library">
+<doc>Verifies that current URL is exactly `url`.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/components/search/default.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.889" level="INFO">Current location is 'https://inventory.edu-netcracker.com/components/search/default.xhtml'.</msg>
+<status status="PASS" endtime="20220505 12:50:36.889" starttime="20220505 12:50:36.885"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="j_idt80"]/div/table</arg>
+<arg>Russia</arg>
+</arguments>
+<msg timestamp="20220505 12:50:36.890" level="INFO">Verifying element '//*[@id="j_idt80"]/div/table' contains text 'Russia'.</msg>
+<status status="PASS" endtime="20220505 12:50:36.932" starttime="20220505 12:50:36.889"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:37.045" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-36.png"&gt;&lt;img src="selenium-screenshot-36.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:37.045" starttime="20220505 12:50:36.933"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.046" critical="yes" starttime="20220505 12:50:36.514"></status>
+</test>
+<test id="s1-s4-t8" name="Find City: equal">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/city/search.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.048" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/city/search.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:37.165" starttime="20220505 12:50:37.048"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${search_name2}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.169" level="INFO">Typing text 'Nizhniy Novgorod' into text field '//*[@id="j_idt66:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:37.275" starttime="20220505 12:50:37.167"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.276" starttime="20220505 12:50:37.166"></status>
+</kw>
+<kw name="Select Name Parameter">
+<arguments>
+<arg>equal</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[1]/td[2]/select</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.277" level="INFO">Selecting label(s) 'equal' from list '//*[@id="j_idt66"]/table/tbody/tr[1]/td[2]/select'.</msg>
+<status status="PASS" endtime="20220505 12:50:37.346" starttime="20220505 12:50:37.276"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.346" starttime="20220505 12:50:37.276"></status>
+</kw>
+<kw name="Click Search">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[4]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.348" level="INFO">Clicking button '//*[@id="j_idt66"]/table/tbody/tr[4]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:37.501" starttime="20220505 12:50:37.347"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.502" starttime="20220505 12:50:37.346"></status>
+</kw>
+<kw name="Search results">
+<arguments>
+<arg>${search_name2}</arg>
+</arguments>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="j_idt92"]/div/table</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.504" level="INFO">Verifying element '//*[@id="j_idt92"]/div/table' contains text 'Nizhniy Novgorod'.</msg>
+<status status="PASS" endtime="20220505 12:50:37.537" starttime="20220505 12:50:37.503"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.537" starttime="20220505 12:50:37.503"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:37.632" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-37.png"&gt;&lt;img src="selenium-screenshot-37.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:37.632" starttime="20220505 12:50:37.537"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.632" critical="yes" starttime="20220505 12:50:37.047"></status>
+</test>
+<test id="s1-s4-t9" name="Find City: start with (with parameters)">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/city/search.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.632" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/city/search.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:37.740" starttime="20220505 12:50:37.632"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${search_name4}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.742" level="INFO">Typing text 'Ki' into text field '//*[@id="j_idt66:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:37.822" starttime="20220505 12:50:37.742"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.823" starttime="20220505 12:50:37.741"></status>
+</kw>
+<kw name="Select Name Parameter">
+<arguments>
+<arg>start with</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[1]/td[2]/select</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.824" level="INFO">Selecting label(s) 'start with' from list '//*[@id="j_idt66"]/table/tbody/tr[1]/td[2]/select'.</msg>
+<status status="PASS" endtime="20220505 12:50:37.896" starttime="20220505 12:50:37.824"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:37.896" starttime="20220505 12:50:37.823"></status>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66:population"]</arg>
+<arg>20000000</arg>
+</arguments>
+<msg timestamp="20220505 12:50:37.909" level="INFO">Typing text '20000000' into text field '//*[@id="j_idt66:population"]'</msg>
+<status status="PASS" endtime="20220505 12:50:38.005" starttime="20220505 12:50:37.909"></status>
+</kw>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[3]/td[1]/select</arg>
+<arg>Yes</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.006" level="INFO">Selecting label(s) 'Yes' from list '//*[@id="j_idt66"]/table/tbody/tr[3]/td[1]/select'.</msg>
+<status status="PASS" endtime="20220505 12:50:38.048" starttime="20220505 12:50:38.005"></status>
+</kw>
+<kw name="Click Search">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[4]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.048" level="INFO">Clicking button '//*[@id="j_idt66"]/table/tbody/tr[4]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:38.224" starttime="20220505 12:50:38.048"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.225" starttime="20220505 12:50:38.048"></status>
+</kw>
+<kw name="Search results">
+<arguments>
+<arg>${search_result4}</arg>
+</arguments>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="j_idt92"]/div/table</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.226" level="INFO">Verifying element '//*[@id="j_idt92"]/div/table' contains text 'Kiev'.</msg>
+<status status="PASS" endtime="20220505 12:50:38.253" starttime="20220505 12:50:38.226"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.253" starttime="20220505 12:50:38.225"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:38.348" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-38.png"&gt;&lt;img src="selenium-screenshot-38.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:38.348" starttime="20220505 12:50:38.253"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.348" critical="yes" starttime="20220505 12:50:37.632"></status>
+</test>
+<test id="s1-s4-t10" name="Find Country: end with">
+<kw type="setup" name="Go To" library="Selenium2Library">
+<doc>Navigates the active browser instance to the provided URL.</doc>
+<arguments>
+<arg>https://inventory.edu-netcracker.com/pages/inventory/country/search.xhtml</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.348" level="INFO">Opening url 'https://inventory.edu-netcracker.com/pages/inventory/country/search.xhtml'</msg>
+<status status="PASS" endtime="20220505 12:50:38.456" starttime="20220505 12:50:38.348"></status>
+</kw>
+<kw name="Input Name">
+<arguments>
+<arg>${search_name3}</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66:name"]</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.458" level="INFO">Typing text 'dora' into text field '//*[@id="j_idt66:name"]'</msg>
+<status status="PASS" endtime="20220505 12:50:38.542" starttime="20220505 12:50:38.457"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.543" starttime="20220505 12:50:38.457"></status>
+</kw>
+<kw name="Select Name Parameter">
+<arguments>
+<arg>end with</arg>
+</arguments>
+<kw name="Select From List By Label" library="Selenium2Library">
+<doc>Selects `*labels` from list identified by `locator`</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[1]/td[2]/select</arg>
+<arg>${data}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.545" level="INFO">Selecting label(s) 'end with' from list '//*[@id="j_idt66"]/table/tbody/tr[1]/td[2]/select'.</msg>
+<status status="PASS" endtime="20220505 12:50:38.611" starttime="20220505 12:50:38.544"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.612" starttime="20220505 12:50:38.544"></status>
+</kw>
+<kw name="Click Search">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>//*[@id="j_idt66"]/table/tbody/tr[4]/td[2]/input</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.614" level="INFO">Clicking button '//*[@id="j_idt66"]/table/tbody/tr[4]/td[2]/input'.</msg>
+<status status="PASS" endtime="20220505 12:50:38.752" starttime="20220505 12:50:38.613"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.752" starttime="20220505 12:50:38.612"></status>
+</kw>
+<kw name="Element Should Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` contains text `expected`.</doc>
+<arguments>
+<arg>//*[@id="j_idt97"]/div/table</arg>
+<arg>${search_result3}</arg>
+</arguments>
+<msg timestamp="20220505 12:50:38.753" level="INFO">Verifying element '//*[@id="j_idt97"]/div/table' contains text 'Andora'.</msg>
+<status status="PASS" endtime="20220505 12:50:38.783" starttime="20220505 12:50:38.752"></status>
+</kw>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220505 12:50:38.944" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-39.png"&gt;&lt;img src="selenium-screenshot-39.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20220505 12:50:38.944" starttime="20220505 12:50:38.783"></status>
+</kw>
+<status status="PASS" endtime="20220505 12:50:38.944" critical="yes" starttime="20220505 12:50:38.348"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20220505 12:50:40.163" starttime="20220505 12:50:38.959"></status>
+</kw>
+<status status="FAIL" endtime="20220505 12:50:40.163" starttime="20220505 12:50:31.416"></status>
+</suite>
+<status status="FAIL" endtime="20220505 12:50:40.178" starttime="20220505 12:50:00.273"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="3" pass="36">Critical Tests</stat>
+<stat fail="3" pass="36">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="3" id="s1" name="InventoryTests" pass="36">InventoryTests</stat>
+<stat fail="0" id="s1-s1" name="Autorization" pass="2">InventoryTests.Autorization</stat>
+<stat fail="1" id="s1-s2" name="Inventory (list of objects) page" pass="11">InventoryTests.Inventory (list of objects) page</stat>
+<stat fail="1" id="s1-s3" name="Registration" pass="14">InventoryTests.Registration</stat>
+<stat fail="1" id="s1-s4" name="Start Page + Search" pass="9">InventoryTests.Start Page + Search</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
